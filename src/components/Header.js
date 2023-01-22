@@ -199,11 +199,11 @@ const DropDown = styled.div`
   // width: 7vw;
   position: relative;
   top: 7vh;
-  left: 4.5vw;
+  left: 4vw;
   border-radius: 2px;
   text-transform: uppercase;
   visibility: hidden;
-  transition: all 0.5s ease-in;
+  transition: all 0.4s ease-in-out;
   // border: 2px solid red;
   div {
     padding: 0.3em;
@@ -212,7 +212,6 @@ const DropDown = styled.div`
 `;
 
 const UserImg = styled.a`
-  // {props.children};
   background-image: url(${(props) => props.imgUrl});
   background-repeat: no-repeat;
   background-size: contain;
