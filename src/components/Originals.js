@@ -1,22 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import p1 from "../images/sample_img.jpg";
 import { selectOriginal } from "../features/movies/movieSlice";
 import { useSelector } from "react-redux";
 
 const Originals = () => {
- const movies = useSelector(selectOriginal);
+  const movies = useSelector(selectOriginal);
   return (
     <Container>
       Originals
       <Content>
         {movies &&
-          movies.map((movie, key) => {
+          movies.map((movie, key) => (
             <Link to={"/detail/" + movie.id} key={key}>
               <Wrap imgUrl={movie.cardImg} alt={movie.title} />
-            </Link>;
-          })}
+            </Link>
+          ))}
       </Content>
     </Container>
   );

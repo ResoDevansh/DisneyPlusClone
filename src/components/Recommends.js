@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import p1 from "../images/sample_img.jpg";
-import { selectRecommend } from "../features/movies/movieSlice";
 import { useSelector } from "react-redux";
+import { selectRecommend } from "../features/movies/movieSlice";
+
 const Recommend = () => {
   const movies = useSelector(selectRecommend);
   return (
@@ -11,11 +11,11 @@ const Recommend = () => {
       Recommended movies for you!
       <Content>
         {movies &&
-          movies.map((movie, key) => {
+          movies.map((movie, key) => (
             <Link to={"/detail/" + movie.id} key={key}>
               <Wrap imgUrl={movie.cardImg} alt={movie.title} />
-            </Link>;
-          })}
+            </Link>
+          ))}
       </Content>
     </Container>
   );

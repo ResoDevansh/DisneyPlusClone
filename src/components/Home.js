@@ -7,12 +7,6 @@ import Recommend from "./Recommends";
 import Trending from "./Trending";
 import Viewers from "./Viewers";
 import { setMovies } from "../features/movies/movieSlice";
-// import {
-//   selectRecommend,
-//   selectTrending,
-//   selectOriginal,
-//   selectNewDisney,
-// } from "../features/movies/movieSlice";
 import { useDispatch, useSelector } from "react-redux";
 import db from "../firebase";
 import { selectUserName } from "../features/user/userSlice";
