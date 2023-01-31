@@ -14,27 +14,27 @@ const Viewers = () => {
     return (<>
         <Container>
             <Wrap imgUrl={p1}>
-                <Video width="180" height="100" autoPlay="autoplay" loop muted playsInline="true">
+                <Video width="180" height="100" autoPlay={true} loop muted playsInline={true}>
                     <source src={v1} type='video/mp4'></source>
                 </Video>
             </Wrap>
             <Wrap imgUrl={p2}>
-                <Video width="180" height="100" autoPlay="autoplay" loop muted playsInline="true">
+                <Video width="180" height="100" autoPlay={true} loop muted playsInline={true}>
                     <source src={v2} type='video/mp4'></source>
                 </Video>
             </Wrap>
             <Wrap imgUrl={p3}>
-                <Video width="180" height="100" autoPlay="autoplay" loop muted playsInline="true">
+                <Video width="180" height="100" autoPlay={true} loop muted playsInline={true}>
                     <source src={v3} type='video/mp4'></source>
                 </Video>
             </Wrap>
             <Wrap imgUrl={p4}>
-                <Video width="180" height="100" autoPlay="autoplay" loop muted playsInline="true">
+                <Video width="180" height="100" autoPlay={true} loop muted playsInline={true}>
                     <source src={v4} type='video/mp4'></source>
                 </Video>
             </Wrap>
             <Wrap imgUrl={p5}>
-                <Video width="180" height="100" autoPlay="autoplay" loop muted playsInline="true">
+                <Video width="180" height="100" autoPlay={true} loop muted playsInline={true}>
                     <source src={v5} type='video/mp4'></source>
                 </Video>
             </Wrap>
