@@ -15,7 +15,6 @@ import { collection, query, onSnapshot } from "firebase/firestore";
 const Home = () => {
   const dispatch = useDispatch();
   const userName = useSelector(selectUserName);
-
   useEffect(() => {
     let recommends = [];
     let newDisneys = [];
@@ -36,7 +35,7 @@ const Home = () => {
           case "trending":
             trendings = [...trendings, { id: doc.id, ...doc.data() }];
             break;
-          case "originals":
+          case "original":
             originals = [...originals, { id: doc.id, ...doc.data() }];
             break;
         }
@@ -65,8 +64,6 @@ const Home = () => {
 };
 
 const Container = styled.div`
-  // border: 2px solid yellow;
-  // height: 100vh;
   margin: 10vh;
   margin-top: 0;
   padding: 1em;
