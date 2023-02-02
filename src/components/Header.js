@@ -125,6 +125,7 @@ const Navbar = styled.div`
   display: flex;
   background-color: #000318;
   align-items: center;
+  // position: fixed;
 `;
 
 const Logo = styled.div`

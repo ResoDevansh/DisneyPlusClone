@@ -1,0 +1,8 @@
+@font-face {
+    font-family: raleway;
+    src: url('./fonts/Raleway-Italic-VariableFont_wght.ttf');
+}
+
+:root{
+    font-family: raleway;
+}
